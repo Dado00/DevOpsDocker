@@ -8,8 +8,8 @@ const alumnos = [
     {"Matricula": 15003456, "Alumno": "Vicente Rodriguez"}
 ];
 
-app.use('/alumnos', function(req, res){
-res.send(alumnos);
+app.get('/alumnos', function(req, res){
+res.json(alumnos);
 
 });
 
